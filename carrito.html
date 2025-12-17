@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belleza  Beauty | Carrito</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#fafafa;color:#333}
+
+/* Header */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  background:#fff;
+  border-bottom:1px solid #eee
+}
+
+header h1{color:#ff2d8a}
+
+/* Navegación */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  background:#fff;
+  padding:10px;
+  border-bottom:1px solid #eee
+}
+
+nav a{
+  text-decoration:none;
+  color:#333;
+  font-weight:bold
+}
+
+/* Contenedor */
+.container{
+  max-width:900px;
+  margin:30px auto;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  border:1px solid #eee
+}
+
+.container h2{
+  color:#ff2d8a;
+  margin-bottom:15px
+}
+
+/* Producto */
+.product{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #eee;
+  padding:12px 0
+}
+
+.product img{
+  width:70px;
+  height:70px;
+  object-fit:cover;
+  border-radius:8px
+}
+
+.product-info{
+  flex:1;
+  margin-left:12px
+}
+
+.product-info h4{
+  margin-bottom:4px
+}
+
+.price{font-weight:bold;color:#ff2d8a}
+
+.remove{
+  background:#ccc;
+  border:none;
+  padding:6px 10px;
+  border-radius:10px;
+  cursor:pointer
+}
+
+.remove:hover{background:#999}
+
+/* Total */
+.total{
+  text-align:right;
+  margin-top:20px;
+  font-size:18px
+}
+
+/* Botón */
+.checkout{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:25px;
+  background:#ff2d8a;
+  color:#fff;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer
+}
+
+.checkout:hover{background:#e0267c}
+
+/* Footer */
+footer{
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  margin-top:30px
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Glow Beauty</h1>
+<span>🛒 Carrito</span>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="productos.html">Productos</a>
+<a href="contacto.html">Contacto</a>
+<a href="ubicacion.html">Ubicación</a>
+</nav>
+
+<div class="container">
+<h2>Tu carrito de compras</h2>
+
+<!-- Producto 1 -->
+<div class="product">
+<img src="labial.jpg">
+<div class="product-info">
+<h4>Labial Mate</h4>
+<p>Tono: Rojo clásico</p>
+</div>
+<div class="price">S/12.90</div>
+<button class="remove">Eliminar</button>
+</div>
+
+<!-- Producto 2 -->
+<div class="product">
+<img src="base.jpeg">
+<div class="product-info">
+<h4>Base Líquida</h4>
+<p>Tono: Beige natural</p>
+</div>
+<div class="price">S/34.90</div>
+<button class="remove">Eliminar</button>
+</div>
+
+<!-- Total -->
+<div class="total">
+<strong>Total: S/47.80</strong>
+</div>
+
+<button class="checkout">Finalizar compra</button>
+</div>
+
+<footer>
+<p>© 2025 Belleza Beauty - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
